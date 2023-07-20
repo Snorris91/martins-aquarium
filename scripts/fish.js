@@ -13,7 +13,7 @@ for (const fish of allFish) {
 
 export const FishList = () => {
     // Invoke the function that you imported from the database module
-    const fishes1 = allFish
+    const fishes1 = newFishOrder()
 
     // Start building a string filled with HTML syntax
     let htmlString = '<article class="fishList">'
@@ -23,6 +23,7 @@ export const FishList = () => {
 
         // Why is there a backtick used for this string?
         htmlString += `<section class="fish-card">
+            <div><img  class="fish-img" src="${fish.image}" /></div>
             <div class="fish__name">${fish.name}</div>
             <div class="fish__species">${fish.species}</div>
             <div class="fish__length">${fish.length}</div>
@@ -35,54 +36,36 @@ export const FishList = () => {
 
     return htmlString
 }
-//<div><img  class="fish__image image--card" src="${fish.image}" /></div>
 
-export const mostHolyFish = () => {
+
+const newFishOrder = () => {
+    let newOrder = []
     // 3, 6, 9, 12, etc... fish
-    const holyFish = []
-
     for (const fish of allFish) {
         if (fish.length % 3 === 0){
-            holyFish.push(fish)
-        }
-    }
-
-    return holyFish
-}
-
-
-
-export const soldierFish = () => {
-    const soldiers = []
-    for (const fish of allFish) {
-        if (fish.length % 5 === 0){
-        soldiers.push(fish)
+            newOrder.push(fish)
         }
     }
     // 5, 10, 15, 20, 25, etc... fish
-    return soldiers
-}
-
-
-
-export const nonHolyFish = () => {
-    const regularFish = []
+    for (const fish of allFish) {
+        if (fish.length % 5 === 0 && !newOrder.includes(fish)){
+        newOrder.push(fish)
+        } 
+    }
+    // other fish
     for (const fish of allFish) {
         if ((fish.length % 5 != 0 && fish.length % 3 != 0)){
-            regularFish.push(fish)
+            newOrder.push(fish)
         }
     }
-    // Any fish not a multiple of 3 or 5
-    return regularFish
+    return newOrder
 }
 
-export const fishyy = [] 
+
+/*
+export const fishyy = []
 fishyy.push(mostHolyFish(), soldierFish(), nonHolyFish())
+*/
 
 
-
-console.log(mostHolyFish())
-console.log(soldierFish())
-console.log(nonHolyFish())
-
-console.log(fishyy)
+console.log(newFishOrder())
