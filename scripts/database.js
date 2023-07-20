@@ -5,7 +5,7 @@ const database = {
     fish: [
         {
             // key: value,
-            image: "",
+            image: "https://files.osgnetworks.tv/15/files/2013/06/How-To-Fish-For-Catfish.jpg",
             name: "Doug",
             species: "Catfish",
             length: 9,
@@ -15,7 +15,7 @@ const database = {
         },
         {
             // key: value,
-            image: "",
+            image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Oreochromis-niloticus-Nairobi.JPG/260px-Oreochromis-niloticus-Nairobi.JPG",
             species: "Tilapia",
             length: 5,
             name: "Scott",
@@ -25,7 +25,7 @@ const database = {
         },
         {
             // key: value,
-            image: "",
+            image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Oncorhynchus_masou_02.jpg/120px-Oncorhynchus_masou_02.jpg",
             species: "Salmon",
             length: 3,
             name: "Sophia",
@@ -35,7 +35,7 @@ const database = {
         },
         {
             // key: value,
-            image: "",
+            image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Ojiya_Nishikigoi_no_Sato_ac_%283%29.jpg/220px-Ojiya_Nishikigoi_no_Sato_ac_%283%29.jpg",
             species: "Koi",
             length: 3,
             name: "Chuck",
@@ -45,7 +45,7 @@ const database = {
         },
         {
             // key: value,
-            image: "",
+            image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Swordfish_natural_environment.jpg/220px-Swordfish_natural_environment.jpg",
             species: "Swordfish",
             length: 6,
             name: "Leo",
@@ -55,9 +55,9 @@ const database = {
         },
         {
             // key: value,
-            image: "",
+            image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/White_shark.jpg/220px-White_shark.jpg",
             species: "Shark",
-            length: 19,
+            length: 15,
             name: "Ben",
             location: "Gulf of Mexico",
             food: "Small Fish",
@@ -65,7 +65,7 @@ const database = {
         },
         {
             // key: value,
-            image: "",
+            image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Barracuda_laban.jpg/250px-Barracuda_laban.jpg",
             species: "Barracuda",
             length: 10,
             name: "Steve",
