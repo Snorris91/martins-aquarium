@@ -73,9 +73,54 @@ const database = {
             food: "Small Fish",
             
         },
+    ],
+    tips: [
+        {
+            name: "Tank 1",
+            tankTemp: 76,
+            sanitize: "Vinegar Solution",
+            salinity: "32 ppt"
+        },
+        {
+            name: "Tank 2",
+            tankTemp: 52,
+            sanitize: "Disinfectant",
+            salinity: "35 ppt"
+        },
+        {
+            name: "Tank 3",
+            tankTemp: 72,
+            sanitize: "Hydrogen Peroxide",
+            salinity: "33 ppt"
+        }
+    ],
+    locations: [
+        {
+            name: "Gulf of Mexico"
+        },
+        {
+            name: "The Great Barrier Reef"
+        },
+        {
+            name: "Sandy Shores"
+        },
+        {
+            name: "Bikini Bottom"
+        },
+        {
+            name: "St. Lucien"
+        }
     ]
 }
 
 export const getFish = () => {
     return database.fish.map(fish => ({...fish}))
+}
+
+export const getTips = () => {
+    return database.tips.map(tips => ({...tips}))
+}
+
+export const getLoca = () => {
+    return database.locations.map(locations => ({...locations}))
 }

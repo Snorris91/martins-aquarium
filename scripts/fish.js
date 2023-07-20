@@ -13,13 +13,13 @@ for (const fish of allFish) {
 
 export const FishList = () => {
     // Invoke the function that you imported from the database module
-    const fishes = getFish()
+    const fishes1 = allFish
 
     // Start building a string filled with HTML syntax
     let htmlString = '<article class="fishList">'
 
     // Create HTML representations of each fish here
-    for (const fish of fishes) {
+    for (const fish of fishes1) {
 
         // Why is there a backtick used for this string?
         htmlString += `<section class="fish-card">
@@ -76,7 +76,13 @@ export const nonHolyFish = () => {
     return regularFish
 }
 
+export const fishyy = [] 
+fishyy.push(mostHolyFish(), soldierFish(), nonHolyFish())
+
+
 
 console.log(mostHolyFish())
 console.log(soldierFish())
 console.log(nonHolyFish())
+
+console.log(fishyy)
